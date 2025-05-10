@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+    font-family: 'Miami';
+    src: url('./fonts/miama/Miama.ttf');
+}
+:root{
+    --primary:#E6533C;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Inter';
+}
+body>*{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 80rem;
+}
+section{
+    margin: 70px 0px;
+}
+.description-text{
+    color: grey;
+}
+nav{
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    border: 1px solid rgba(57, 57, 57, 0.741);
+    border-radius: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3px;
+}
+.hamburger {
+    display: none; /* Hide the hamburger icon by default */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Media query for Mobile L (max-width: 425px) */
+@media (max-width: 425px) {
+    .menu {
+        display: none; /* Hide the menu on smaller screens */
+    }
+
+    .hamburger {
+        display: flex; /* Show the hamburger icon */
+    }
+}
+.menu>*{
+    padding: 0.5rem 1rem;
+}
+.menu>:nth-child(1){
+    background-color: var(--primary);
+    border-radius: 18px ;
+}
+
+nav p{
+    font-weight: 800;
+    font-style: italic;
+    color: var(--primary);
+    font-size:40px;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner > div {
+    flex: 1; 
+}
+.banner-description>*{
+    margin: 10px 0;
+}
+.banner-description h1{
+    font-size: 80px;
+}
+#title-italic{
+    font-family: 'Miami';
+    font-weight: lighter;
+    font-size: 150px;
+    line-height: 0;
+}
+.banner-image{
+    height: 500px;
+    width: 500px;
+    background-image: url('./images/Images 2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner-buttons{
+    margin-top: 20px;
+}
+.banner-buttons>:nth-child(1){
+    margin-right: 15px;
+    color: white;
+    border: none;
+    border-radius: 22px;
+    padding: 15px 40px;
+    background-color: var(--primary);
+    font-size:large;
+}
+.banner-buttons>:nth-child(2){
+    color: white;
+    border: 1px solid white;
+    border-radius: 22px;
+    padding: 15px 40px;
+    background-color: black;
+    font-size:large;
+}
+.banner-image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-image>:nth-child(1){
+    margin-bottom: -300px;
+    margin-left: 27px;
+}
+.banner-image>:nth-child(2){
+    margin-bottom: 178px;
+    margin-right: 36px;
+}
+.banner-image-card{
+    border: 1px solid rgba(106, 106, 106, 0.692);
+    border-radius: 10px;
+    width: 217px;
+    height: 90px;
+    background-color: rgba(76, 76, 76, 0.454);
+}
+.banner-image-card-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.banner-image-card-1>:nth-child(1){
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #E6533C;
+}
+.banner-image-card-2>*{
+    margin: 15px 0px 0px 15px;
+}
+.banner-image-card-2>:nth-child(2){
+    margin-top: -1px;
+}
+
+.habits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+.habits h1{
+    font-weight: bolder;
+    font-size: 50px;
+}
+.tool img{
+    border-radius: 50%;
+    height: 210px;
+    margin-bottom: 20px;
+}
+.tool>*{
+    margin: 8px 0px;
+}
+.tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tools>*{
+    margin: 30px;
+}
+.extra-service{
+    background-color: #323232;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.extra-service > div {
+    flex: 1;
+    margin: 15px; 
+}
+.service-image{
+    background-image: url('./images/run.jpg');
+    width: 300px; 
+    height: 300px; 
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 15px;
+}
+.service-description{
+    margin: 30px;
+}
+.service-description h1{
+    font-size: 50px;
+}
+.service-description>*{
+    margin: 30px;
+}
